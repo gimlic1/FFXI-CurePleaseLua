@@ -1,13 +1,13 @@
 --[[
 Assumptions:
 - [A1] Pure Windower 4 Lua replacement for Cure Please v2.0.4.4f. Uses zero external DLLs or memory hooks so monthly FFXI client updates cannot break it.
-- [A2] Reads and writes native CurePlease <MySettings> JOB_SUB.xml profiles from `data/settings/<MAIN>_<SUB>.xml` (with all 7 of Kevin's saved profiles pre-installed).
+- [A2] Reads and writes native CurePlease <MySettings> JOB_SUB.xml profiles from `data/settings/<MAIN>_<SUB>.xml` (with all 7 of Gimlic's saved profiles pre-installed).
 - [A3] Tracks party member buffs/debuffs via incoming packet 0x076 (5 party members) AND zero-config Windower IPC (`windower.send_ipc_message`) when loaded on dual-boxed characters on the same PC.
 - [A4] Enforces the FFXI Windower Fair-Play Policy: never injects illegal action packets, checks spell recasts/MP/known-spells/job levels, never casts while moving or mid-cast, and enforces legitimate FFXI spell ranges (< 20.4 yalms for single-target magic, < 8 yalms for Devotion, < 10 yalms for self-centered AoEs).
 ]]
 
 _addon.name = 'CurePleaseLua'
-_addon.author = 'Kevin & Antigravity'
+_addon.author = 'Gimlic & Antigravity'
 _addon.version = '2.0.0'
 _addon.commands = {'cp', 'cureplease', 'cplua'}
 
